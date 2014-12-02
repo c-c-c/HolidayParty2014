@@ -1,14 +1,18 @@
 #include <Adafruit_NeoPixel.h>
 
+#define PIXELS 60
+
 int pins[50] = { 2,3,4,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53 };
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, 2, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(PIXELS, 2, NEO_GRB + NEO_KHZ800);
 
 // Protocol details (two header bytes, 7 value bytes, checksum)
 
+// Display (300 pixels): 20 X 15
+
 // ____________________________________________
-// | 0xBA | 0xBE | pin | R | G | B | checksum |
-// --------------------------------------------
+// | 0xBA | 0xBE | PIXEL | R | G | B | checksum |
+// ````````````````````````````````````````````
 
 const int kProtocolHeaderFirstByte = 0xBA;
 const int kProtocolHeaderSecondByte = 0xBE;
@@ -18,7 +22,7 @@ const int kProtocolBodyLength = 4;
 const int kProtocolChecksumLength = 1;
 
 //const int animationFrames = 15;
-const int pixelsPerStrip = 60;
+const int pixelsPerStrip = PIXELS;
 
 // Buffers and state
 
@@ -124,7 +128,7 @@ void animateStrip(int fR, int fG, int fB, int frameR, int frameG, int frameB, in
 
 void setPixels(uint8_t uR, uint8_t uG, uint8_t uB, int wait) {
   // foreach pixel on strip
-      for(int p = 0; p < pixelsPerStrip; p++) {
+      for(int p = 0; p < PIXELS; p++) {
         strip.setPixelColor(p, uR, uG, uB);
       }
       strip.show();
