@@ -13,9 +13,9 @@ gsp_particles
 gsp_particles_2
 ---------------
 
-![GSP Particles 2](https://github.com/GSPBetaGroup/HolidayParty2014/tree/master/drawing-app/gsp_particles_2.jpeg "GSP")
+![GSP Particles 2](https://raw.githubusercontent.com/GSPBetaGroup/HolidayParty2014/master/drawing-app/gsp_particles_2.jpeg "GSP")
 
 gsp_particles_3
 ---------------
 
-![GSP Particles 3](https://github.com/GSPBetaGroup/HolidayParty2014/tree/master/drawing-app/gsp_particles_3.jpeg "GSP")
+![GSP Particles 3](https://raw.githubusercontent.com/GSPBetaGroup/HolidayParty2014/master/drawing-app/gsp_particles_3.jpeg "GSP")
