@@ -8,7 +8,7 @@ A couple examples:
 gsp_particles
 -------------
 
-![GSP Particles](https://github.com/GSPBetaGroup/HolidayParty2014/tree/master/drawing-app/gsp_particles.jpeg "GSP")
+![GSP Particles](https://raw.githubusercontent.com/GSPBetaGroup/HolidayParty2014/master/drawing-app/gsp_particles.jpeg "GSP")
 
 gsp_particles_2
 ---------------
